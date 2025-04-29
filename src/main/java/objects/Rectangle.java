@@ -5,7 +5,7 @@ public class Rectangle {
     private int width;
 
     public Rectangle() {
-        setLength(10);
+        length = 20;
         width = 100;
     }
 
@@ -15,21 +15,21 @@ public class Rectangle {
         setWidth(width);
     }
 
-     protected int calculateArea() {
+     public int calculateArea() {
         int area = length * width;
         return area;
     }
 
-    protected void setLength(int defaultLength) {
+    public void setLength(int defaultLength) {
         length = defaultLength;
     }
-    protected void setWidth(int defaultWidth) {
+    public void setWidth(int defaultWidth) {
         width = defaultWidth;
     }
-    protected int getLength()  {
+    public int getLength()  {
         return length;
     }
-    protected int getWidth()  {
+    public int getWidth()  {
         return width;
     }
 }
